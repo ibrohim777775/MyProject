@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My fisrt project</title>
+</head>
+<link rel="stylesheet" href="styles/style.css">
+
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="header_inners">
+
+                <a class="header_logo_link" href="#"></a>
+                <nav class="header_links">
+
+                    <a href="" class="nav_links_inners isactive">home</a>
+                    <a href="" class="nav_links_inners">about</a>
+                    <a href="" class="nav_links_inners">work</a>
+                    <a href="" class="nav_links_inners">process</a>
+                    <a href="" class="nav_links_inners">services</a>
+                    <a href="" class="nav_links_inners">testimonials</a>
+                    <a href="" class="nav_links_inners">contact</a>
+
+                </nav>
+
+            </div>
+
+            <div class="header_about">
+                <h2 class="header_text">We Design and Develop</h2>
+                <p class="header_about_text">
+                    We are a new design studio based in USA. We have over
+                    20 years of combined experience, and know a thing or two
+                    about designing websites and mobile apps.
+                </p>
+                <a href="#" class="contact_us">contact us</a>
+            </div>
+        </div>
+    </header>
+    <!-- End of header -->
+
+    <div class="about_us">
+        <h3 class="about_us_title">About Us</h3>
+        <p class="about_us_text">
+            Divide have don't man wherein air fourth. Own itself make <br>have night won't make.
+            A you under Seed appear which good give. Own give air without fowl moveth dry first <br>
+            heaven fruit, dominion she'd won't very all.
+
+        </p>
+        <img src="img/signature.png" class="about_signature" alt="signature">
+    </div>
+    <!-- End of about_us -->
+
+    <main>
+
+        <div class="skills">
+            <div class="skills_text">
+                <div class="container">
+                    <div class="skills_inners">
+                        <h3 class="skills_title">Professional Skills</h3>
+                        <div class="skillsout">
+                            <p>UI/UX Design 75%</p>
+                            <div class="container_for_skills_out">
+                                <div class="kills html"></div>
+                            </div>
+
+                            <p>web development 90%</p>
+                            <div class="container_for_skills_out">
+                                <div class="kills css"></div>
+                            </div>
+
+                            <p>marketing 65%</p>
+                            <div class="container_for_skills_out">
+                                <div class="kills js"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="statistics">
+            <div class="container">
+                <div class="statistics_inners">
+
+                    <div class="stat_our">
+                        <img src="img/portfolio.png" alt="" class="icon_for_stat">
+                        <div class="stat_number portfolio">548</div>
+                        <h6 class="stat_title">projects completed</h6>
+                    </div>
+
+                    <div class="stat_our">
+                        <img src="img/oclock.png" alt="" class="icon_for_stat">
+
+                        <div class="stat_number oclock">548</div>
+                        <h6 class="stat_title">projects completed</h6>
+                    </div>
+
+                    <div class="stat_our">
+                        <img src="img/star.png" alt="" class="icon_for_stat">
+
+                        <div class="stat_number star">548</div>
+                        <h6 class="stat_title">projects completed</h6>
+                    </div>
+
+                    <div class="stat_our">
+                        <img src="img/heart.png" alt="" class="icon_for_stat">
+
+                        <div class="stat_number heart">735</div>
+                        <h6 class="stat_title">projects completedit</h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <div class="gallery_inners">
+
+                <div class="row row_respon">
+                    <div class="column_respon">
+                        <div class="column">
+                            <img src="img/gal_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                        </div>
+                    </div>
+
+                    <div class="column_respon">
+                        <div class="column">
+                            <img src="img/gal_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                        </div>
+                    </div>
+
+                    <div class="column_respon">
+                        <div class="column">
+                            <img src="img/gal_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                        </div>
+                    </div>
+
+                    <div class="column_respon">
+                        <div class="column">
+                            <img src="img/gal_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="img/gal_1.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="img/gal_2.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="img/gal_3.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img/gal_4.png" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="load_more">
+            <h5 class="load_text">
+                load more work
+            </h5>
+        </div>
+        </div>
+
+
+    </main>
+    <!-- End of main -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

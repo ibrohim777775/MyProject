@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header{
+    padding-top: 35px;
+
+}
+.header_inners{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    max-height: 100%;
+}
+
+.header{
+    background-image: url(../img/comp.png);
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* max-height: 100%; */
+}
+
+.header_logo_link{
+    background-image: url(../img/logo.png);
+    width: 63px;
+    height: 65px;
+}
+
+.nav_links_inners{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin: 0 7px 0 7px;
+    font-weight: 500;
+    color: black;
+    transition: all .4s;
+
+}
+.isactive, .nav_links_inners:hover{
+    color: #007D2F;
+    transition: all .4s;
+}
+
+.header_about{
+    width: 444px;
+    max-width: 100%;
+    margin-top: 74px;
+}
+.header_text{
+    font-size: 38px;
+    color: #1D1D1D;
+}
+.header_about_text{
+    font-size: 18px;
+    color: #787878;
+    margin: 30px 0 52px;
+}
+.contact_us{
+    display: block;
+    width: 191px;
+    height: 55px;
+    font-size: 12px;
+    background-color: #007D2F;
+    padding: 23px 46px 23px 55px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.about_us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 94px;
+    text-align: center;
+    
+}
+.about_us_title{
+    font-size: 30px;
+    color: #191919;
+    letter-spacing: 0.3;
+    /* font-weight: 500; */
+    margin-bottom: 45px;
+}
+.about_us_text{
+    font-size: 16px;
+    color: #787878;
+    margin-bottom: 51px;
+}
+.about_signature{
+    margin-bottom: 39px;
+}
+
+.skills{
+    background-color: #F8F9F9;
+    /* display: flex; */
+    position: relative;
+    height: 573px;
+}
+.skills_inners{
+    padding-top: 165px;
+    padding-bottom: 165px;
+    width: 50%;
+}
+
+.skills:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 573px;
+    max-height: 100%;
+    background-image: url(../img/coding_with_comp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 0;
+    top: 0;
+}
+.skills_title{
+    font-size: 30px;
+}
+.skillsout p{
+    font-size: 12px;
+    color: #000000;
+    padding-top: 39px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.container_for_skills_out {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.kills {
+  height: 4px;
+  color: white; /* White text color */
+}
+
+.html {width: 75%; background-color: #4CAF50;} /* Green */
+.css {width: 90%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+
+
+.statistics{
+    background-color: #007D2F;
+    padding-top: 71px;
+    color: #FFFFFF;
+}
+.statistics_inners{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+.stat_our{
+    text-align: center;
+}
+.stat_number{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.54px;
+    margin-top: 10px;
+}
+.stat_title{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-top: 15px;
+}
+
+.gallery{
+    background-color: #007D2F;
+    padding-bottom: 75px;
+}
+.gallery_inners{
+    margin-bottom: 47px;
+}
+
+/* .row > .column {
+  /* padding: 0 8px; */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.row_respon{
+  display: flex;
+  flex-wrap: wrap;
+}
+.column_respon{
+  flex: 25%;
+  max-width: 25%;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+  .column_respon {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column_respon {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.load_more{
+    text-align: center;
+}
+.load_text{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding-bottom: 40px;
+}
